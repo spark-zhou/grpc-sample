@@ -7,9 +7,16 @@
     <artifactId>grpc-sample</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>grpc-client-server/grpc-sample-server</module>
+        <module>grpc-sample-proto</module>
+        <module>grpc-client-server/grpc-sample-client</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <grpc.version>1.47.0</grpc.version>
+        <protoc.version>3.5.1</protoc.version>
     </properties>
 </project>
